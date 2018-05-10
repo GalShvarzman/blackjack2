@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Blackjack</title>
+        <link rel="stylesheet" href="static/index.css">
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu Mono' rel='stylesheet'>
+    </head>
+    <body>
+        <div>
+            <div class="new-game-btn-wrapper">
+                <button id="newGame" onclick="startNewGame()">Start new game</button>
+            </div>
+            <span class="joinToGameP1">
+                <input type="text" class="name1" placeholder="Player 1 name"/>
+                <input type="submit" class="submit1" value="Join"/>
+            </span>
+            <span class="joinToGameP2"> 
+                <input type="text" class="name2" placeholder="Player 2 name"/>
+                <input type="submit" class="submit2" value="Join"/>
+            </span> 
+        </div>
+        <div class="split left">
+            <div class="centered">
+                <h1 id="score-player1"></h1>
+                <div><h2>Player 1</h2><h3 class="player1name"></h3></div>
+                <span><input id="draw-btn1" type="button" value="Draw" onclick="draw(1)"/></span>
+                <span><input id="stay-btn1" type="button" value="Stay" onclick="stay(1)"/></span>
+            </div>
+        </div>
+
+        <div class="split right">
+            <div class="centered">
+                <h1 id="score-player2"></h1>
+                <div><h2>Player 2</h2><h3 class="player2name"></h3></div>
+                <span><input id="draw-btn2" type="button" value="Draw" onclick="draw(2) " disabled/></span>
+                <span><input id="stay-btn2" type="button" value="Stay" onclick="stay(2)" disabled/></span>
+            </div>
+        </div>
+        <script src="static/node_modules/jquery/dist/jquery.js"></script>
+        <script src="static/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+body, button, input[type=button], input.name1, input.name2, input.submit1, input.submit2 {
+    font-family: 'Ubuntu Mono';
+}
+
+body{
+    margin: 0;
+}
+
+input[type="button"]{
+   color: darkslateblue;
+    background: white;
+    border: 2px solid gray;
+    padding: 6px 12px;
+    font-size: 16px;
+}
+
+input[type="button"]:disabled {
+    background: #dfdfdf;
+}
+
+.new-game-btn-wrapper{
+    position: fixed;
+    top:0;
+    right: 0;
+}
+
+button#newGame{
+    border: 3px solid darkslateblue;
+    padding: 6px 12px;
+    color: cadetblue;
+    font-size: 20px;
+    background-color: white;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 38px;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left, .right{
+    color: white;
+}
+
+.left {
+    left: 0;
+    background-color: lightskyblue;
+}
+
+.right {
+    right: 0;
+    background-color: lightblue;
+}
+
+.centered {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+form{
+    margin: 10px;
+}
+
+input{
+    border: 3px solid darkslateblue;
+    padding: 6px 12px;
+    font-size: 20px;
+    background-color: white;
+    color: cadetblue;
+}
+
+input.name{
+    width: 270px;   
+}
+
+input::placeholder{
+    color: cadetblue;
+    font-size: 16px;
+}
